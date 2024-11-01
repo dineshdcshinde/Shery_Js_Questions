@@ -188,14 +188,14 @@
 // let reverseNumber = 1000;
 // for(let i= reverseNumber; i>=1; i--
 // ){
-// console.log(i); 
+// console.log(i);
 // }
 
 // 26- Take a number as input and print its table
 //        5 * 1 = 5
 //        5 * 2 = 10 ... up to 10 terms
 
-// let table = 290; 
+// let table = 290;
 
 // for(let i = 1; i<=10; i++){
 //     console.log(i*table);
@@ -203,7 +203,7 @@
 
 // 27- Sum up to n terms.
 
-// let number = 5; 
+// let number = 5;
 // let sum =0;
 
 // for(let i=1; i<=number; i++){
@@ -214,10 +214,10 @@
 // 28- Factorial of a number
 
 // let number = 5;
-// let fact = 1; 
+// let fact = 1;
 // if(number > 0){
 //     for(let i=1; i<=number; i++){
-//         fact = fact*i; 
+//         fact = fact*i;
 //     }
 //     console.log(fact);
 // } else{
@@ -225,29 +225,109 @@
 // }
 
 // 29- Print the sum of all even & odd numbers in a range seperately.
-let number = 10; 
-let evenSum =0;
-let oddSum =0;
-for(let i=1; i<=number; i++){
-    
-}
-console.log(evenSum);
+// let range = 10;
+// let even = 0;
+// let odd = 0;
 
+// for (let i =0; i <=range; i++){
+//     if(i%2 === 0){
+//         even+=i;
+//     } else{
+//         odd += i;
+//     }
+// }
 
+// console.log(even, odd)
 
 // 30- Print all the factors of a number.
-// 31- Print the sum of all factors of a number, 50 -> 1 + 2 + 5 + 10 + 25 = 43
+// let number = 12;
+// let factors = [];
+
+// for(let i=1; i<=number; i++){
+//     if(number % i === 0){
+//         factors.push(i);
+//     }
+// }
+
+// console.log(factors)
+
+// 31- Print the sum of all factors of a number, 50 -> 1 + 2 + 5 + 10 + 25 + 50 = 93
+// let num = 50;
+// let factSum = 0;
+
+// for(let i=1; i<=num; i++){
+//     if(num%i === 0){
+//         factSum+=i;
+//     }
+// }
+// console.log(factSum);
+
 // 32- Check if the number is Prime or not.
-// 33- Write a program to take two inputs a, b & find the value of a  raised to the power of b.
+// console.log(factSum%2==0?"prime":"notPrime");
+
+// 33- Write a program to take two inputs a, b & find the value of a  raised to
+// the power of b.
 // 	Ex - a = 2, b = 5
 // 	OP - 2^5 = 32
+// let a = +prompt("Enter a value:");
+// let b = +prompt("Enter b value:");
+// let a = 2;
+// let b = 5;
+// console.log(Math.pow(a,b));
+
+// let pow = 1;
+// for (let i = 0; i < b; i++) {
+//   //5
+//   pow *= a;
+// }
+// console.log(pow);
+
 // 34- Seprate each digit of a number and print it on the new line ex - 123
 // 	OP
 // 		3
 // 		2
 // 		1
+// let num = 123; 
+// while (num > 0) {   
+//     let lastDigit = num %10; // gave last digit
+//     console.log(lastDigit); //print
+//     num = Math.floor(num/10);//remove the last digit 
+// }
+
+// 34- Sum of digits of a number, 936 = 18}
+// let num = 936; 
+// let sum = 0;
+// while(num>0){
+//     let digit = num%10;
+//     // console.log(digit); 
+//     num = Math.floor(num/10);
+//     sum+=digit;
+// }
+// console.log(sum);
+
 // 35- Sum of digits of a number, 936 = 18
+// let sum = 0;
+// while(num>0){
+//     let digit = num%10;
+//     // console.log(digit); 
+//     num = Math.floor(num/10);
+//     sum+=digit;
+// }
+// console.log(sum);
+
 // 36- Accept a number and print its reverse
+
+let num = 123456;
+let reverse = 0;
+let temp = num;
+while(temp > 0){
+    let digit = temp % 10;
+    reverse = reverse * 10 + digit;
+    temp = Math.floor(temp / 10);
+}
+console.log(reverse);
+
+
 // 37- Accept a number and check if it is a pallindromic number (If number and its reverse are equal)
 //        Ex - 12321 - Rerverse - 12321
 // 38- Accept a number and check if it is a strong number or not (Sum of factorial of each digit)
