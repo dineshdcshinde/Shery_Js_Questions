@@ -287,19 +287,19 @@
 // 		3
 // 		2
 // 		1
-// let num = 123; 
-// while (num > 0) {   
+// let num = 123;
+// while (num > 0) {
 //     let lastDigit = num %10; // gave last digit
 //     console.log(lastDigit); //print
-//     num = Math.floor(num/10);//remove the last digit 
+//     num = Math.floor(num/10);//remove the last digit
 // }
 
 // 34- Sum of digits of a number, 936 = 18}
-// let num = 936; 
+// let num = 936;
 // let sum = 0;
 // while(num>0){
 //     let digit = num%10;
-//     // console.log(digit); 
+//     // console.log(digit);
 //     num = Math.floor(num/10);
 //     sum+=digit;
 // }
@@ -309,27 +309,126 @@
 // let sum = 0;
 // while(num>0){
 //     let digit = num%10;
-//     // console.log(digit); 
+//     // console.log(digit);
 //     num = Math.floor(num/10);
 //     sum+=digit;
 // }
 // console.log(sum);
 
 // 36- Accept a number and print its reverse
+// let num = 123456;
+// let reverse = 0;
+// let temp = num;
 
-let num = 123456;
-let reverse = 0;
-let temp = num;
-while(temp > 0){
-    let digit = temp % 10;
-    reverse = reverse * 10 + digit;
-    temp = Math.floor(temp / 10);
-}
-console.log(reverse);
-
+// while(num >0){
+//     let digit = num %10;
+//     reverse = reverse *10+digit;
+//     num = Math.floor(num/10);
+// }
+// console.log(reverse);
 
 // 37- Accept a number and check if it is a pallindromic number (If number and its reverse are equal)
 //        Ex - 12321 - Rerverse - 12321
+// let num = 12321;
+// let orValue = num;
+// let reverse = 0;
+// let temp = num;
+
+// while (num > 0) {
+//   let digit = num % 10; //gave last digit
+//   reverse = reverse * 10 + digit; //add last digit
+//   num = Math.floor(num / 10); //remove last digit
+// }
+
+// console.log(orValue == reverse ? "Palindrone" : "not");
+
 // 38- Accept a number and check if it is a strong number or not (Sum of factorial of each digit)
 //        Ex- 145 = 1! + 4! + 5! = 145
+
+// let num = 145;
+// let sum = 0;
+// let temp = num;
+// let fact = 1;
+
+// while(num > 0){
+//     let digit = num %10;
+
+//     for(let i=1; i<digit; i++){
+//         fact *= i;
+//     }
+
+//     sum += fact;
+
+//     num = Math.floor(num/10);
+// }
+
+// console.log(temp == fact?"Strong Number":"not strong number");
+
 // 39- Automorphic number 5 = 25 = 625 = 390625, 6=36, 76 = 5776
+
+// ------------------------------------------------------------DO WHILE, SWITCH Day 17 to 19--------------------------------------------------------
+
+// 40- Print hello until user gives wrong input using do while
+
+// 41- Make a choice based calculator using do while
+
+// do {
+//     let choice = +prompt("1.Multipliy Number\n 2.Add number\n 3.Subtract number\n 4.Divide number\n");
+//     if(choice == 1){
+//         let firstNumber = +prompt("Enter first number");
+//         let secondNumber = +prompt("Enter second number");
+//         console.log(`Multiplication will be ${firstNumber} * ${secondNumber}`);
+
+//     } else if(choice == 2){
+//         let firstNumber = +prompt("Enter first number");
+//         let secondNumber = +prompt("Enter second number");
+//         console.log(`Addition will be ${firstNumber} + ${secondNumber}`);
+//     } else if(choice == 3){
+//         let firstNumber = +prompt("Enter first number");
+//         let secondNumber = +prompt("Enter second number");
+//         console.log(`Subtraction will be ${firstNumber} - ${secondNumber}`);
+//     }else if(choice == 4){
+//         let firstNumber = +prompt("Enter first number");
+//         let secondNumber = +prompt("Enter second number");
+//         console.log(`Division will be ${firstNumber} / ${secondNumber}`);
+//     }
+// } while ();
+
+// 42- Print Weekday using Switch
+// let day = 5;
+// switch (day) {
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
+//     case 4:
+//         console.log("Thursday");
+//         break;
+//     case 5:
+//         console.log("Friday");
+//         break;
+//     case 6:
+//         console.log("Saturday");
+//         break;
+
+//     default:
+//         console.log("Sunday");
+//         break;
+// }
+
+// 43- Question 22 using Switch
+//  Accept an english alphabet from user and check if it is a consonent or a vowel
+
+
+
+// 44- Project - Guess Game
+//       Write a program that generates a random number and asks the user to guess what the number is.
+//       If the user's guess is higher than the random number, the program should display "Too high, try again."
+//       If the user's guess is lower than the random number, the program should display "Too low, try again."
+//       The program should use a loop that repeats until the user correctly guesses the random number.
+// 45- Project Restuarent v 1.0
